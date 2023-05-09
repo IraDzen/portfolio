@@ -60,4 +60,7 @@ ORDER BY t.name ASC
 
 * [Курс "Инженер по тестированию" SkyPro](https://sky.pro/courses/programming/qa-engineer)
 * Роман Савин. Тестирование Дот Ком
+* [QA Bible](https://vladislaveremeev.gitbook.io/qa_bible/)
 * [Курс лекций "Тестирование ПО. Профессиональный курс подготовки QA"](https://www.youtube.com/watch?v=MmbVEwYnWTs&list=PLZqgWWF4O-zg03RGSZ2GpHLE3BmO8bjKo)
+* Стив Круг. Не заставляйте меня думать.
+* Расс Унгер. Кэролайн Чендлер. UX дизайн.
