@@ -7,8 +7,7 @@
 ### Примеры тест-кейсов
 
 ### Пример тестирование API
-[Коллекция Postman](https://documenter.getpostman.com/view/27289013/2s93eYUBqg)
-
+[Коллекция Postman](https://documenter.getpostman.com/view/27289013/2s93eYUBqg)  
 [Документация](https://docs.spacexdata.com/)
 
 ### Умения, навыки и инструменты
@@ -21,9 +20,10 @@
 Работа с тестовой документацией
 
 БД, SQL
-Умею писать запросы средней сложности с использованием операторов **WHERE, ORDER BY, JOIN, GROUP BY** и других. Примеры:
+Умею писать запросы средней сложности с использованием операторов **WHERE, ORDER BY, JOIN, GROUP BY** и других.  
+Примеры:  
 
-Вывести топ 10 департаменов с количеством населенных пунктов > 100
+Вывести топ 10 департаменов с количеством населенных пунктов > 100  
 ```
 select d."name" , count(t."name") from departments d
 join towns t on d.code = t.department
@@ -33,7 +33,7 @@ order by count(t."name") desc
 limit 10
 ```
 
-Вывести клиентов по убыванию выручки
+Вывести клиентов по убыванию выручки  
 ```
 SELECT c.CustomerName , SUM(p.Price) FROM OrderDetails od
 JOIN Orders o ON od.OrderID = o.OrderID
