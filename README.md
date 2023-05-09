@@ -33,7 +33,7 @@ order by count(t."name") desc
 limit 10
 ```
 
-Вывести клиентов по убыванию выручки  
+Вывести название клиента и общу выручку. Отсортировать по убыванию выручки.
 ```
 SELECT c.CustomerName , SUM(p.Price) FROM OrderDetails od
 JOIN Orders o ON od.OrderID = o.OrderID
@@ -43,7 +43,16 @@ GROUP BY c.CustomerName
 ORDER BY SUM(p.Price) DESC
 ```
 
+Вывести все города и населенные пункты Франции с названием департамента и региона в алфавитном порядке по возрастанию  
+```
+select t."name" ,d."name" ,r."name" from towns t
+join departments d on t.department = d.code
+join regions r on r.code = d.region
+order by t."name" asc
+```
+
 ### Обучающие материалы и книги
 
+* [Курс "Инженер по тестированию" SkyPro](https://sky.pro/courses/programming/qa-engineer)
 * Роман Савин. Тестирование Дот Ком
 * [Курс лекций "Тестирование ПО. Профессиональный курс подготовки QA"](https://www.youtube.com/watch?v=MmbVEwYnWTs&list=PLZqgWWF4O-zg03RGSZ2GpHLE3BmO8bjKo)
