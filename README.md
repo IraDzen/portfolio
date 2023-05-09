@@ -29,7 +29,7 @@ API для доступа к информация по запускам раке
 Примеры:  
 
 Вывести топ 10 департаменов с количеством населенных пунктов > 100  
-```
+```sql
 SELECT d.name, COUNT(t.name) from departments d
 JOIN towns t ON d.code = t.department
 GROUP BY d.name
@@ -39,7 +39,7 @@ LIMIT 10
 ```
 
 Вывести название клиента и общу выручку. Отсортировать по убыванию выручки.
-```
+```sql
 SELECT c.CustomerName , SUM(p.Price) FROM OrderDetails od
 JOIN Orders o ON od.OrderID = o.OrderID
 JOIN Customers c ON c.CustomerID = o.CustomerID
@@ -49,7 +49,7 @@ ORDER BY SUM(p.Price) DESC
 ```
 
 Вывести все города и населенные пункты Франции с названием департамента и региона в алфавитном порядке по возрастанию  
-```
+```sql
 SELECT t.name ,d.name ,r.name from towns t
 JOIN departments d ON t.department = d.code
 JOIN regions r ON r.code = d.region
