@@ -9,6 +9,9 @@
 ### Примеры тест-кейсов
 
 ### Пример тестирование API
+
+API для доступа к информация по запускам ракет SpaceX
+
 [Коллекция Postman](https://documenter.getpostman.com/view/27289013/2s93eYUBqg)  
 [Документация](https://docs.spacexdata.com/)
 
