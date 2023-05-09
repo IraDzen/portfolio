@@ -1,4 +1,4 @@
-## Portfolio
+## Портфолио
 
 [Резюме](https://iradzen.github.io/)
 
