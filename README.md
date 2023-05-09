@@ -74,7 +74,7 @@ ORDER BY COUNT(t.name) DESC
 LIMIT 10
 ```
 
-Вывести название клиента и общу выручку. Отсортировать по убыванию выручки.
+Вывести название клиента и общую выручку. Отсортировать по убыванию выручки.
 ```sql
 SELECT c.CustomerName , SUM(p.Price) FROM OrderDetails od
 JOIN Orders o ON od.OrderID = o.OrderID
