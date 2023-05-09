@@ -22,17 +22,17 @@
 Работа с тестовой документацией  
 
 БД, SQL
-Умею писать запросы средней сложности с использованием операторов **WHERE, ORDER BY, JOIN, GROUP BY** и других.  
+Умею писать запросы средней сложности с использованием операторов **WHERE, ORDER BY, JOIN, GROUP BY** и других. Практиковалась с БД postgres. Для работы с БД использовала программу DBeaver.
 Примеры:  
 
 Вывести топ 10 департаменов с количеством населенных пунктов > 100  
 ```
-select d."name" , count(t."name") from departments d
-join towns t on d.code = t.department
-group by d."name"
-having count(t."name") > 100
-order by count(t."name") desc
-limit 10
+SELECT d.name, COUNT(t.name) from departments d
+JOIN towns t ON d.code = t.department
+GROUP BY d.name
+HAVING COUNT(t.name) > 100
+ORDER BY COUNT(t.name) DESC
+LIMIT 10
 ```
 
 Вывести название клиента и общу выручку. Отсортировать по убыванию выручки.
@@ -47,10 +47,10 @@ ORDER BY SUM(p.Price) DESC
 
 Вывести все города и населенные пункты Франции с названием департамента и региона в алфавитном порядке по возрастанию  
 ```
-select t."name" ,d."name" ,r."name" from towns t
-join departments d on t.department = d.code
-join regions r on r.code = d.region
-order by t."name" asc
+SELECT t.name ,d.name ,r.name from towns t
+JOIN departments d ON t.department = d.code
+JOIN regions r ON r.code = d.region
+ORDER BY t.name ASC
 ```
 
 ### Обучающие материалы и книги
